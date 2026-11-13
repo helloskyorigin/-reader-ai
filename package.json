@@ -1,0 +1,12 @@
+{
+  "name": "reader-ai",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check app.mjs && node --check engine.mjs && node --check sw.js",
+    "build": "node -e \"console.log('Static app: no build required')\"",
+    "test:browser": "python -u tests/browser_audit.py"
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fffaf4" />
+  <meta name="description" content="A friendly, free reading buddy for kids. Read your own English book aloud, practise stories and get gentle help." />
+  <link rel="icon" type="image/svg+xml" href="./assets/icon.svg" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Reader AI — Your happy reading friend</title>
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="topbar">
+      <button class="brand" id="brand-home" type="button" aria-label="Reader AI, go home">
+        <span class="brand-icon" aria-hidden="true">✦</span><span>Reader <span class="brand-dot">AI</span></span>
+      </button>
+      <div class="top-actions">
+        <span class="friendly-pill"><span aria-hidden="true">♥</span> made with love</span>
+        <button class="icon-btn" id="settings-btn" type="button" aria-label="Open settings" title="Grown-up settings">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.4a3.4 3.4 0 1 0 0-6.8 3.4 3.4 0 0 0 0 6.8Z"/><path d="M19.4 13.4a7.5 7.5 0 0 0 0-2.8l1.8-1.4-1.8-3.1-2.2.7a7.7 7.7 0 0 0-2.4-1.4l-.4-2.3h-3.6l-.4 2.3A7.7 7.7 0 0 0 8 6.8l-2.2-.7L4 9.2l1.8 1.4a7.5 7.5 0 0 0 0 2.8L4 14.8l1.8 3.1 2.2-.7a7.7 7.7 0 0 0 2.4 1.4l.4 2.3h3.6l.4-2.3a7.7 7.7 0 0 0 2.4-1.4l2.2.7 1.8-3.1-1.8-1.4Z"/></svg>
+        </button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer">A little reading, a lot of growing. <span aria-hidden="true">🌱</span></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>
